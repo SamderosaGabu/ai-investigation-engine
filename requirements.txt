@@ -1,0 +1,13 @@
+fastapi>=0.115
+uvicorn>=0.30
+streamlit>=1.39
+requests>=2.32
+qdrant-client>=1.12
+sentence-transformers>=3.2
+rank-bm25>=0.2.2
+pypdf>=5.0
+python-docx>=1.1
+python-multipart>=0.0.12
+openai>=1.50
+numpy>=1.26
+pytest>=8.0
