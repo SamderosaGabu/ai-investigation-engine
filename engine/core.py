@@ -15,27 +15,47 @@ _embedder = None
 _client = None
 load_dotenv()
 
+def client():
+    global _client
+
+    if _client is None:
+        url = os.getenv("QDRANT_URL")
+
+        if url:
+            _client = QdrantClient(
+                url=url,
+                api_key=os.getenv("QDRANT_API_KEY")
+            )
+        else:
+            _client = QdrantClient(
+                path=os.getenv("QDRANT_DATA_PATH", str(DATA / "qdrant"))
+            )
+
+        if not _client.collection_exists(COLLECTION):
+            _client.create_collection(
+                collection_name=COLLECTION,
+                vectors_config=models.VectorParams(
+                    size=384,
+                    distance=models.Distance.COSINE
+                )
+            )
+
+        if url:
+            _client.create_payload_index(
+                collection_name=COLLECTION,
+                field_name="doc_id",
+                field_schema=models.PayloadSchemaType.KEYWORD,
+                wait=True
+            )
+
+    return _client
+
 def embedder():
     global _embedder
     if _embedder is None:
         _embedder = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
     return _embedder
 
-def client():
-    global _client
-    if _client is None:
-        url = os.getenv('QDRANT_URL')
-        db_path = os.getenv("QDRANT_DATA_PATH", str(DATA / "qdrant"))
-
-        _client = (
-
-            QdrantClient(url=url, api_key=os.getenv("QDRANT_API_KEY") or None)
-            if url
-            else QdrantClient(path=db_path)
-        )
-        if not _client.collection_exists(COLLECTION):
-            _client.create_collection(COLLECTION, vectors_config=models.VectorParams(size=384, distance=models.Distance.COSINE))
-    return _client
 
 def extract(filename: str, raw: bytes):
     from io import BytesIO
