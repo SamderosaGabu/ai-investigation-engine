@@ -1,0 +1,3 @@
+strategy,questions,recall_at_10,mrr_at_10
+characters,30,1.0,1.0
+paragraphs,30,1.0,1.0
