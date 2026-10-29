@@ -20,6 +20,107 @@ The AI Investigation Engine allows users to upload, manage, search, and investig
 - **Web Interface:** Dark-mode dashboard built using Streamlit.
 - **REST API:** FastAPI provides endpoints for document management and investigation.
 
+## System Workflow & Architecture
+
+The AI Investigation Engine follows a Retrieval-Augmented Generation (RAG) pipeline. It combines document processing, vector embeddings, hybrid retrieval, and AI reasoning to investigate questions using evidence from uploaded documents.
+
+### Overall Workflow
+
+```text
+                  USER
+                    |
+          +---------+---------+
+          |                   |
+     Upload Document     Ask a Question
+          |                   |
+          v                   v
+     Text Extraction     Query Processing
+          |                   |
+          v                   v
+     Text Chunking       Hybrid Retrieval
+          |              /           \
+          v             v             v
+     Embedding       Semantic       BM25
+     Generation       Search         Search
+          |              \           /
+          v               v         v
+     Qdrant Vector     Result Fusion
+       Database              |
+                             v
+                       Custom Ranking
+                             |
+                             v
+                       Evidence Selection
+                             |
+                             v
+                       Google Gemini
+                       AI Reasoning
+                             |
+                     +-------+-------+
+                     |               |
+                Enough Evidence?     No
+                     |               |
+                    Yes              v
+                     |         Abstain / Explain
+                     v         Missing Evidence
+              Generate Answer
+                     |
+                     v
+              Source Citations
+                     |
+                     v
+               Final Response
+```
+
+### Step 1 — Document Ingestion
+
+Users upload documents through the Streamlit interface. The FastAPI backend extracts their contents and prepares them for indexing.
+
+The system supports multiple document formats and stores document metadata to enable management, updates, and deletion.
+
+### Step 2 — Chunking and Embeddings
+
+Extracted text is divided into smaller sections using one of two strategies:
+
+- **Character-based chunking:** Splits text according to character limits.
+- **Paragraph-based chunking:** Groups text using paragraph boundaries.
+
+Sentence Transformers converts each chunk into a numerical embedding that represents its semantic meaning.
+
+### Step 3 — Vector Storage
+
+The embeddings and associated metadata are stored in Qdrant, allowing the system to perform similarity searches and retrieve relevant document passages.
+
+### Step 4 — Hybrid Retrieval
+
+When a user submits a question, the engine searches the indexed documents using two complementary approaches:
+
+- **Semantic search:** Finds passages with similar meaning, even when different words are used.
+- **BM25 keyword search:** Identifies passages containing important terms from the question.
+
+The results are combined using Reciprocal Rank Fusion (RRF) and additional custom ranking logic.
+
+### Step 5 — AI Investigation
+
+The highest-ranked evidence is provided to Google Gemini, which analyzes the retrieved information to answer the user's question.
+
+For complex questions, Gemini can use function calling to request additional document searches.
+
+### Step 6 — Evidence Verification
+
+The investigation process is designed to:
+
+- Identify conflicting information from different sources.
+- Support conclusions with retrieved evidence.
+- Avoid unsupported claims.
+- Acknowledge when the available evidence is insufficient.
+
+### Step 7 — Final Answer
+
+The Streamlit interface displays the AI-generated investigation, including supporting source citations.
+
+Users can review their investigation history and export results through the interface.
+
 ## Technology Stack
 
 | Component | Technology |
