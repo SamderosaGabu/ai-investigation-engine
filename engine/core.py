@@ -228,23 +228,27 @@ def ingest_batch(records, batch_size=128, strategy=None):
 
 
 def delete_document(doc_id):
-    client().delete(
-        COLLECTION,
-        points_selector=models.FilterSelector(
-            filter=models.Filter(
-                must=[
-                    models.FieldCondition(
-                        key="doc_id",
-                        match=models.MatchValue(value=doc_id)
-                    )
-                ]
-            )
-        ),
-        wait=True
-    )
+    with _lock:
+        db = client()
 
-    invalidate_search_cache()
+        db.delete(
+            collection_name=COLLECTION,
+            points_selector=models.FilterSelector(
+                filter=models.Filter(
+                    must=[
+                        models.FieldCondition(
+                            key="doc_id",
+                            match=models.MatchValue(value=str(doc_id))
+                        )
+                    ]
+                )
+            ),
+            wait=True
+        )
 
+        invalidate_search_cache()
+
+    return {"status": "deleted", "doc_id": doc_id}
 def all_chunks(limit=100000):
     output, offset = [], None
     while len(output) < limit:
