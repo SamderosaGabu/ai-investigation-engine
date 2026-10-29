@@ -1,0 +1,754 @@
+[
+  {
+    "id": "5a7a06935542990198eaf050",
+    "question": "Which magazine was started first Arthur's Magazine or First for Women?",
+    "answer": "Arthur's Magazine",
+    "supporting_titles": [
+      "Arthur's Magazine",
+      "First for Women"
+    ],
+    "expected_doc_candidates": [
+      [
+        "Arthur's Magazine__5.txt"
+      ],
+      [
+        "First for Women__7.txt"
+      ]
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a879ab05542996e4f30887e",
+    "question": "The Oberoi family is part of a hotel company that has a head office in what city?",
+    "answer": "Delhi",
+    "supporting_titles": [
+      "Oberoi family",
+      "The Oberoi Group"
+    ],
+    "expected_doc_candidates": [
+      [
+        "Oberoi family__11.txt"
+      ],
+      [
+        "The Oberoi Group__16.txt"
+      ]
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a8d7341554299441c6b9fe5",
+    "question": "Musician and satirist Allie Goertz wrote a song about the \"The Simpsons\" character Milhouse, who Matt Groening named after who?",
+    "answer": "President Richard Nixon",
+    "supporting_titles": [
+      "Allie Goertz",
+      "Milhouse Van Houten"
+    ],
+    "expected_doc_candidates": [
+      [
+        "Allie Goertz__23.txt"
+      ],
+      [
+        "Milhouse Van Houten__24.txt"
+      ]
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a82171f5542990a1d231f4a",
+    "question": "What nationality was James Henry Miller's wife?",
+    "answer": "American",
+    "supporting_titles": [
+      "Peggy Seeger",
+      "Ewan MacColl"
+    ],
+    "expected_doc_candidates": [
+      [
+        "Peggy Seeger__35.txt"
+      ],
+      [
+        "Ewan MacColl__34.txt"
+      ]
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a84dd955542997b5ce3ff79",
+    "question": "Cadmium Chloride is slightly soluble in this chemical, it is also called what?",
+    "answer": "alcohol",
+    "supporting_titles": [
+      "Cadmium chloride",
+      "Ethanol"
+    ],
+    "expected_doc_candidates": [
+      [
+        "Cadmium chloride__40.txt"
+      ],
+      [
+        "Ethanol__45.txt"
+      ]
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a7e36045542991319bc9440",
+    "question": "Which tennis player won more Grand Slam titles, Henri Leconte or Jonathan Stark?",
+    "answer": "Jonathan Stark",
+    "supporting_titles": [
+      "Jonathan Stark (tennis)",
+      "Henri Leconte"
+    ],
+    "expected_doc_candidates": [
+      [
+        "Jonathan Stark (tennis)__55.txt"
+      ],
+      [
+        "Henri Leconte__52.txt"
+      ]
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5adf44985542993a75d2646d",
+    "question": "Which genus of moth in the world's seventh-largest country contains only one species?",
+    "answer": "Crambidae",
+    "supporting_titles": [
+      "Indogrammodes",
+      "India"
+    ],
+    "expected_doc_candidates": [
+      [
+        "Indogrammodes__67.txt"
+      ],
+      [
+        "India__60.txt"
+      ]
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a832c3455429954d2e2ec41",
+    "question": "Who was once considered the best kick boxer in the world, however he has been involved in a number of controversies relating to his \"unsportsmanlike conducts\" in the sport and crimes of violence outside of the ring.",
+    "answer": "Badr Hari",
+    "supporting_titles": [
+      "Global Fighting Championship",
+      "Badr Hari"
+    ],
+    "expected_doc_candidates": [
+      [
+        "Global Fighting Championship__76.txt"
+      ],
+      [
+        "Badr Hari__74.txt"
+      ]
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a7d0db955429909bec76924",
+    "question": "The Dutch-Belgian television series that \"House of Anubis\" was based on first aired in what year?",
+    "answer": "2006",
+    "supporting_titles": [
+      "House of Anubis",
+      "Het Huis Anubis"
+    ],
+    "expected_doc_candidates": [
+      [
+        "House of Anubis__80.txt"
+      ],
+      [
+        "Het Huis Anubis__88.txt"
+      ]
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a89372855429951533612e6",
+    "question": "What is the length of the track where the 2013 Liqui Moly Bathurst 12 Hour was staged?",
+    "answer": "6.213 km long",
+    "supporting_titles": [
+      "2013 Liqui Moly Bathurst 12 Hour",
+      "Mount Panorama Circuit"
+    ],
+    "expected_doc_candidates": [
+      [
+        "2013 Liqui Moly Bathurst 12 Hour__96.txt"
+      ],
+      [
+        "Mount Panorama Circuit__90.txt"
+      ]
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a88a1525542997e5c09a647",
+    "question": "Who won more Grand Slam singles titles Li Na or Larisa Neiland?",
+    "answer": "Li Na",
+    "supporting_titles": [
+      "Li Na",
+      "Larisa Neiland"
+    ],
+    "expected_doc_candidates": [
+      [
+        "Li Na__50.txt"
+      ],
+      [
+        "Larisa Neiland__59.txt"
+      ]
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a75d338554299109176e5a0",
+    "question": "Which Indian family founded the Trident Hotel brand?",
+    "answer": "The Oberoi family",
+    "supporting_titles": [
+      "Oberoi family",
+      "The Oberoi Group"
+    ],
+    "expected_doc_candidates": [
+      [
+        "Oberoi family__11.txt"
+      ],
+      [
+        "The Oberoi Group__16.txt"
+      ]
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a7c11eb5542997c3ec972db",
+    "question": "House of Anubis is based on a show that first aired where?",
+    "answer": "Netherlands and Flanders",
+    "supporting_titles": [
+      "House of Anubis",
+      "Het Huis Anubis"
+    ],
+    "expected_doc_candidates": [
+      [
+        "House of Anubis__80.txt"
+      ],
+      [
+        "Het Huis Anubis__88.txt"
+      ]
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5abd90545542996e802b47d7",
+    "question": "Fast Cars, Danger, Fire and Knives includes guest appearances from which hip hop record executive?",
+    "answer": "Jaime Meline",
+    "supporting_titles": [
+      "Fast Cars, Danger, Fire and Knives",
+      "El-P"
+    ],
+    "expected_docs": [
+      "eval_5abd90545542996e802b47d7_0.txt",
+      "eval_5abd90545542996e802b47d7_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5aba66c855429939ce03dcdb",
+    "question": "Gunmen from Laredo starred which narrator of \"Frontier\"?",
+    "answer": "Walter Darwin Coy",
+    "supporting_titles": [
+      "Gunmen from Laredo",
+      "Walter Coy"
+    ],
+    "expected_docs": [
+      "eval_5aba66c855429939ce03dcdb_0.txt",
+      "eval_5aba66c855429939ce03dcdb_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a7722d655429966f1a36c99",
+    "question": "Where did the form of music played by Die Rhöner Säuwäntzt originate?",
+    "answer": "United States",
+    "supporting_titles": [
+      "Die Rhöner Säuwäntzt",
+      "Skiffle"
+    ],
+    "expected_docs": [
+      "eval_5a7722d655429966f1a36c99_0.txt",
+      "eval_5a7722d655429966f1a36c99_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5ade025e5542997dc790711e",
+    "question": "In which American football game was Malcolm Smith named Most Valuable player?",
+    "answer": "Super Bowl XLVIII",
+    "supporting_titles": [
+      "Malcolm Smith (American football)",
+      "Super Bowl XLVIII"
+    ],
+    "expected_docs": [
+      "eval_5ade025e5542997dc790711e_0.txt",
+      "eval_5ade025e5542997dc790711e_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5ab381b155429969a97a816b",
+    "question": "What U.S Highway gives access to Zilpo Road, and is also known as Midland Trail?",
+    "answer": "US 60",
+    "supporting_titles": [
+      "Zilpo Road",
+      "Morehead, Kentucky"
+    ],
+    "expected_docs": [
+      "eval_5ab381b155429969a97a816b_0.txt",
+      "eval_5ab381b155429969a97a816b_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5ae0d91e55429924de1b7198",
+    "question": "The 1988 American comedy film, The Great Outdoors, starred a four-time Academy Award nominee, who received a star on the Hollywood Walk of Fame in what year?",
+    "answer": "2006",
+    "supporting_titles": [
+      "The Great Outdoors (film)",
+      "Annette Bening"
+    ],
+    "expected_docs": [
+      "eval_5ae0d91e55429924de1b7198_0.txt",
+      "eval_5ae0d91e55429924de1b7198_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5ac2a5d455429921a00ab01b",
+    "question": "What are the names of the current members of  American heavy metal band who wrote the music for  Hurt Locker The Musical?",
+    "answer": "Hetfield and Ulrich, longtime lead guitarist Kirk Hammett, and bassist Robert Trujillo.",
+    "supporting_titles": [
+      "Hurt Locker (musical)",
+      "Metallica"
+    ],
+    "expected_docs": [
+      "eval_5ac2a5d455429921a00ab01b_0.txt",
+      "eval_5ac2a5d455429921a00ab01b_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5adc1309554299438c868d3b",
+    "question": "Human Error\" is the season finale of the third season of a tv show that aired on what network?",
+    "answer": "Fox",
+    "supporting_titles": [
+      "Human Error (House)",
+      "House (TV series)"
+    ],
+    "expected_docs": [
+      "eval_5adc1309554299438c868d3b_0.txt",
+      "eval_5adc1309554299438c868d3b_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a83168855429966c78a6b2e",
+    "question": "Dua Lipa, an English singer, songwriter and model, the album spawned the number-one single \"New Rules\" is a song by English singer Dua Lipa from her eponymous debut studio album, released in what year?",
+    "answer": "2017",
+    "supporting_titles": [
+      "Dua Lipa",
+      "New Rules (song)"
+    ],
+    "expected_docs": [
+      "eval_5a83168855429966c78a6b2e_0.txt",
+      "eval_5a83168855429966c78a6b2e_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5ab698885542995eadef002a",
+    "question": "American politician Joe Heck ran unsuccessfully against Democrat Catherine Cortez Masto, a woman who previously served as the 32nd Attorney General of where?",
+    "answer": "Nevada",
+    "supporting_titles": [
+      "Joe Heck",
+      "Catherine Cortez Masto"
+    ],
+    "expected_docs": [
+      "eval_5ab698885542995eadef002a_0.txt",
+      "eval_5ab698885542995eadef002a_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5ab345db55429969a97a8122",
+    "question": "Which state does the drug stores, of which the CEO is Warren Bryant, are located?",
+    "answer": "Hawaii",
+    "supporting_titles": [
+      "Warren Bryant",
+      "Longs Drugs"
+    ],
+    "expected_docs": [
+      "eval_5ab345db55429969a97a8122_0.txt",
+      "eval_5ab345db55429969a97a8122_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5adf732a5542993a75d264e9",
+    "question": "Which  American politician did Donahue replaced",
+    "answer": "Kelli Ward",
+    "supporting_titles": [
+      "Sue Donahue",
+      "Kelli Ward"
+    ],
+    "expected_docs": [
+      "eval_5adf732a5542993a75d264e9_0.txt",
+      "eval_5adf732a5542993a75d264e9_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5ac2a912554299218029dae8",
+    "question": "Which band was founded first, Hole, the rock band that Courtney Love was a frontwoman of, or The Wolfhounds?",
+    "answer": "The Wolfhounds",
+    "supporting_titles": [
+      "Courtney Love",
+      "The Wolfhounds"
+    ],
+    "expected_docs": [
+      "eval_5ac2a912554299218029dae8_0.txt",
+      "eval_5ac2a912554299218029dae8_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a7272eb5542997f827839d7",
+    "question": "How old is the female main protagonist of Catching Fire?",
+    "answer": "16-year-old",
+    "supporting_titles": [
+      "Catching Fire",
+      "The Hunger Games (novel)"
+    ],
+    "expected_docs": [
+      "eval_5a7272eb5542997f827839d7_0.txt",
+      "eval_5a7272eb5542997f827839d7_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5ac2c3545542990b17b1548b",
+    "question": "Chang Ucchin was born in korea during a time that ended with the conclusion of what?",
+    "answer": "World War II",
+    "supporting_titles": [
+      "Chang Ucchin",
+      "Korea under Japanese rule"
+    ],
+    "expected_docs": [
+      "eval_5ac2c3545542990b17b1548b_0.txt",
+      "eval_5ac2c3545542990b17b1548b_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5ae3b4d05542992f92d82349",
+    "question": "Who is the director of the 2003 film which has scenes in it filmed at the Quality Cafe in Los Angeles?",
+    "answer": "Todd Phillips",
+    "supporting_titles": [
+      "Quality Cafe (diner)",
+      "Old School (film)"
+    ],
+    "expected_docs": [
+      "eval_5ae3b4d05542992f92d82349_0.txt",
+      "eval_5ae3b4d05542992f92d82349_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a76a401554299373536012b",
+    "question": "New Faces of 1952 is a musical revue with songs and comedy skits, it helped jump start the career of which young performer, and American actress?",
+    "answer": "Carol Lawrence",
+    "supporting_titles": [
+      "New Faces of 1952",
+      "Carol Lawrence"
+    ],
+    "expected_docs": [
+      "eval_5a76a401554299373536012b_0.txt",
+      "eval_5a76a401554299373536012b_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5ae3918b5542994393b9e709",
+    "question": "Were Pavel Urysohn and Leonid Levin known for the same type of work?",
+    "answer": "no",
+    "supporting_titles": [
+      "Pavel Urysohn",
+      "Leonid Levin"
+    ],
+    "expected_docs": [
+      "eval_5ae3918b5542994393b9e709_0.txt",
+      "eval_5ae3918b5542994393b9e709_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a8efd3c55429918e830d179",
+    "question": "Are both The New Pornographers and Kings of Leon American rock bands?",
+    "answer": "no",
+    "supporting_titles": [
+      "The New Pornographers",
+      "Kings of Leon"
+    ],
+    "expected_docs": [
+      "eval_5a8efd3c55429918e830d179_0.txt",
+      "eval_5a8efd3c55429918e830d179_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a8b63755542997f31a41cfe",
+    "question": "750 7th Avenue and 101 Park Avenue, are located in which city?",
+    "answer": "New York City",
+    "supporting_titles": [
+      "750 7th Avenue",
+      "101 Park Avenue"
+    ],
+    "expected_docs": [
+      "eval_5a8b63755542997f31a41cfe_0.txt",
+      "eval_5a8b63755542997f31a41cfe_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5ac15df95542994d76dccded",
+    "question": "Which actress played the part of fictitious character Kimberly Ann Hart, in the franchise built around a live action superhero television series taking much of its footage from the Japanese tokusatsu 'Super Sentai'?",
+    "answer": "Amy Jo Johnson",
+    "supporting_titles": [
+      "Kimberly Hart",
+      "Power Rangers"
+    ],
+    "expected_docs": [
+      "eval_5ac15df95542994d76dccded_0.txt",
+      "eval_5ac15df95542994d76dccded_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a7a02235542996c55b2dcd3",
+    "question": "Who was born first, Pablo Trapero or Aleksander Ford?",
+    "answer": "Aleksander Ford",
+    "supporting_titles": [
+      "Pablo Trapero",
+      "Aleksander Ford"
+    ],
+    "expected_docs": [
+      "eval_5a7a02235542996c55b2dcd3_0.txt",
+      "eval_5a7a02235542996c55b2dcd3_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5ac061ab554299294b218fac",
+    "question": "Are Jane and First for Women both women's magazines?",
+    "answer": "yes",
+    "supporting_titles": [
+      "Jane (magazine)",
+      "First for Women"
+    ],
+    "expected_docs": [
+      "eval_5ac061ab554299294b218fac_0.txt",
+      "eval_5ac061ab554299294b218fac_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5ab5a2f85542997d4ad1f197",
+    "question": "What profession does Nicholas Ray and Elia Kazan have in common?",
+    "answer": "director",
+    "supporting_titles": [
+      "Nicholas Ray",
+      "Elia Kazan"
+    ],
+    "expected_docs": [
+      "eval_5ab5a2f85542997d4ad1f197_0.txt",
+      "eval_5ab5a2f85542997d4ad1f197_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5abd7ca05542993062266cab",
+    "question": "Where is the company that purchased Aixam based in?",
+    "answer": "Roseau, Minnesota, USA",
+    "supporting_titles": [
+      "Aixam",
+      "Polaris Industries"
+    ],
+    "expected_docs": [
+      "eval_5abd7ca05542993062266cab_0.txt",
+      "eval_5abd7ca05542993062266cab_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a8ce5c7554299441c6b9f64",
+    "question": "Which documentary is about Finnish rock groups, Adam Clayton Powell or The Saimaa Gesture?",
+    "answer": "The Saimaa Gesture",
+    "supporting_titles": [
+      "Adam Clayton Powell (film)",
+      "The Saimaa Gesture"
+    ],
+    "expected_docs": [
+      "eval_5a8ce5c7554299441c6b9f64_0.txt",
+      "eval_5a8ce5c7554299441c6b9f64_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a81ff1d554299676cceb1c3",
+    "question": "Who was inducted into the Rock and Roll Hall of Fame, David Lee Roth or Cia Berg?",
+    "answer": "David Lee Roth",
+    "supporting_titles": [
+      "Cia Berg",
+      "David Lee Roth"
+    ],
+    "expected_docs": [
+      "eval_5a81ff1d554299676cceb1c3_0.txt",
+      "eval_5a81ff1d554299676cceb1c3_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5ae732685542991e8301cbc3",
+    "question": "Zimbabwe's Guwe Secondary School has a sister school in what New York cunty?",
+    "answer": "Nassau County",
+    "supporting_titles": [
+      "Guwe Secondary School",
+      "Carle Place High School"
+    ],
+    "expected_docs": [
+      "eval_5ae732685542991e8301cbc3_0.txt",
+      "eval_5ae732685542991e8301cbc3_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a8a2ebc5542996c9b8d5e33",
+    "question": "The Royal Commission into Drug Trafficking (1977–1979) or Woodward Royal Commission was a royal commission initiated by the New South Wales Government to investigate drug trafficking in New South Wales, Australia, especially links between the New South Wales Police and Mafia, The Honoured Society, is a Calabrian 'Ndrangheta criminal confederation, started in Melbourne and currently active in all of which country?",
+    "answer": "Australia",
+    "supporting_titles": [
+      "Royal Commission into Drug Trafficking",
+      "Honoured Society (Australia)"
+    ],
+    "expected_docs": [
+      "eval_5a8a2ebc5542996c9b8d5e33_0.txt",
+      "eval_5a8a2ebc5542996c9b8d5e33_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5add28c85542992ae4cec4be",
+    "question": "The 337th Flight Test Squadron (337 FLTS) was most recently part of the 46th Test Wing and based at McClellan Air Force Base, a former United States Air Force base located in the North Highlands area of Sacramento County, in which US state?",
+    "answer": "California",
+    "supporting_titles": [
+      "337th Flight Test Squadron",
+      "McClellan Air Force Base"
+    ],
+    "expected_docs": [
+      "eval_5add28c85542992ae4cec4be_0.txt",
+      "eval_5add28c85542992ae4cec4be_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a7d90195542991319bc93cf",
+    "question": "The axial turbojet Pirna 014 was designed by engineers from this German aircraft and aircraft engine manufacturer based in which city?",
+    "answer": "Dessau",
+    "supporting_titles": [
+      "Pirna 014",
+      "Junkers"
+    ],
+    "expected_docs": [
+      "eval_5a7d90195542991319bc93cf_0.txt",
+      "eval_5a7d90195542991319bc93cf_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5abe3f9455429976d4830aaa",
+    "question": "Which faith is designated to the University of Providence, private university accredited by the NW association of Schools and Colleges and located in a third largest city in Montana after being passed by Missoula?",
+    "answer": "Roman Catholic",
+    "supporting_titles": [
+      "University of Providence",
+      "Great Falls, Montana"
+    ],
+    "expected_docs": [
+      "eval_5abe3f9455429976d4830aaa_0.txt",
+      "eval_5abe3f9455429976d4830aaa_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5abee5e25542994516f45473",
+    "question": "Pauline Henry was known as the vocalist of a very popular cover song. Which album was this song from?",
+    "answer": "The Joshua Tree",
+    "supporting_titles": [
+      "Pauline Henry",
+      "I Still Haven't Found What I'm Looking For"
+    ],
+    "expected_docs": [
+      "eval_5abee5e25542994516f45473_0.txt",
+      "eval_5abee5e25542994516f45473_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5ae78ec5554299540e5a5605",
+    "question": "Guitars for Wounded Warriors is an album that was recorded in the village in which New York county?",
+    "answer": "Ulster County",
+    "supporting_titles": [
+      "Guitars for Wounded Warriors",
+      "New Paltz (village), New York"
+    ],
+    "expected_docs": [
+      "eval_5ae78ec5554299540e5a5605_0.txt",
+      "eval_5ae78ec5554299540e5a5605_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a760a5f554299109176e629",
+    "question": "What American country music singer-songwriter, born in May of 1942, sang a duet with her ex-husband the same year that he released the song \"The Battle?\"",
+    "answer": "Tammy Wynette",
+    "supporting_titles": [
+      "The Battle (George Jones song)",
+      "Tammy Wynette"
+    ],
+    "expected_docs": [
+      "eval_5a760a5f554299109176e629_0.txt",
+      "eval_5a760a5f554299109176e629_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5a7a52745542996c55b2dd4f",
+    "question": "Who was born first, Francis Nethersole or Elizabeth Stuart?",
+    "answer": "Sir Francis Nethersole",
+    "supporting_titles": [
+      "Francis Nethersole",
+      "Elizabeth Stuart, Queen of Bohemia"
+    ],
+    "expected_docs": [
+      "eval_5a7a52745542996c55b2dd4f_0.txt",
+      "eval_5a7a52745542996c55b2dd4f_1.txt"
+    ],
+    "category": "multi_hop"
+  },
+  {
+    "id": "5ac1f7f355429964131be2ae",
+    "question": "What does the Hacker-Pschorr Brewery have to limit in order to comply with German regulations?",
+    "answer": "ingredients in beer",
+    "supporting_titles": [
+      "Hacker-Pschorr Brewery",
+      "Reinheitsgebot"
+    ],
+    "expected_docs": [
+      "eval_5ac1f7f355429964131be2ae_0.txt",
+      "eval_5ac1f7f355429964131be2ae_1.txt"
+    ],
+    "category": "multi_hop"
+  }
+]
