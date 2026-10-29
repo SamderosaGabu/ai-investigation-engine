@@ -11,3 +11,4 @@ python-multipart>=0.0.12
 openai>=1.50
 numpy>=1.26
 pytest>=8.0
+python-dotenv
