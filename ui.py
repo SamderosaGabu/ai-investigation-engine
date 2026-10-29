@@ -3,8 +3,13 @@ from pathlib import Path
 import time
 import requests
 import streamlit as st
+import secrets
+from dotenv import load_dotenv
+
+load_dotenv()
 
 BASE = os.getenv("API_URL", "http://localhost:8000").rstrip("/")
+ADMIN_KEY = os.getenv("ADMIN_API_KEY", "")
 
 LOGO_PATH = Path(__file__).resolve().parent / "investigation_logo.png"
 st.set_page_config(page_title="AI Investigation Engine", page_icon=str(LOGO_PATH) if LOGO_PATH.exists() else "🔎", layout="wide", initial_sidebar_state="expanded")
@@ -90,20 +95,66 @@ h1, h2, h3, p, label {{ color: {text}; }}
 """, unsafe_allow_html=True)
 
 
+
 def call(method, path, **kwargs):
     try:
-        response = requests.request(method, BASE + path, timeout=180, **kwargs)
+        headers = kwargs.pop("headers", {})
+        if ADMIN_KEY:
+            headers["X-Admin-Key"] = ADMIN_KEY
+
+        response = requests.request(
+            method,
+            BASE + path,
+            headers=headers,
+            timeout=180,
+            **kwargs,
+        )
+
         response.raise_for_status()
         return response.json()
+
     except requests.HTTPError as exc:
         try:
             payload = exc.response.json()
-            detail = payload.get("detail", payload) if isinstance(payload, dict) else payload
+            detail = (
+                payload.get("detail", payload)
+                if isinstance(payload, dict)
+                else payload
+            )
         except ValueError:
             detail = exc.response.text
-        raise RuntimeError(f"API error {exc.response.status_code}: {detail}") from exc
+
+        raise RuntimeError(
+            f"API error {exc.response.status_code}: {detail}"
+        ) from exc
+
     except requests.RequestException as exc:
-        raise RuntimeError(f"Cannot reach backend at {BASE}: {exc}") from exc
+        raise RuntimeError(
+            f"Cannot reach backend at {BASE}: {exc}"
+        ) from exc
+
+
+if not ADMIN_KEY:
+    st.error("ADMIN_API_KEY is not configured.")
+    st.stop()
+
+if not st.session_state.get("authenticated", False):
+    st.title("🔐 AI Investigation Engine")
+    st.write("Enter your access key to open the investigation workspace.")
+
+    entered_key = st.text_input(
+        "Access key",
+        type="password",
+    )
+
+    if st.button("Unlock workspace", type="primary"):
+        if secrets.compare_digest(entered_key, ADMIN_KEY):
+            st.session_state.authenticated = True
+            st.rerun()
+        else:
+            st.error("Invalid access key.")
+
+    st.stop()
 
 
 def refresh_documents():
